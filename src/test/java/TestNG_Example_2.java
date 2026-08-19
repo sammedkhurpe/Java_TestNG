@@ -59,6 +59,7 @@ public class TestNG_Example_2
 	{
 		page.close();
 		browser.close();
+		context.close();;
 		playwright.close();
 	}
 }

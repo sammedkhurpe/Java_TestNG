@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Sanity Testing">
+    <test thread-count="4" parallel="methods" name="Test Cycle 1">
+        <classes>
+            <class name="TestNG_Example_2"/>
+           		 <methods>
+           		 	<include name='facebook'/>
+           		 	<include name="insta"/>
+           		 </methods>
+            <class name="TestNG_Example_3"/>
+            	<methods>
+           		 	<include name="insta"/>
+           		</methods>
+        </classes>
+    </test>
+</suite>

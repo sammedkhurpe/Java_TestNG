@@ -8,12 +8,95 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14,127</td><td></td><td></td></tr>
+<tr><th colspan="8">Sanity Testing</th></tr>
+<tr><td><a href="#t0">Test Cycle 1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">15,619</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">TestNG_Example_6</td><td><a href="#m0">facebook</a></td><td rowspan="1">1787118953085</td><td rowspan="1">3407</td></tr><tr class="passedeven"><td><a href="#m1">insta</a></td><td rowspan="1">1787118948035</td><td rowspan="1">2855</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sanity Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test Cycle 1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">TestNG_Example_2</td><td><a href="#m0">closeout</a></td><td rowspan="1">1787141484248</td><td rowspan="1">161</td></tr><tr><th colspan="4">Test Cycle 1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestNG_Example_2</td><td><a href="#m1">insta</a></td><td rowspan="1">1787141477217</td><td rowspan="1">7095</td></tr><tr><th colspan="4">Test Cycle 1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestNG_Example_2</td><td><a href="#m2">facebook</a></td><td rowspan="1">1787141477981</td><td rowspan="1">6264</td></tr><tr class="passedodd"><td rowspan="1">TestNG_Example_3</td><td><a href="#m3">insta</a></td><td rowspan="1">1787141477335</td><td rowspan="1">6016</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">TestNG_Example_6#facebook</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Testcase: Login of Facebook</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestNG_Example_6#insta</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Testcase: Login of Instagram</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test Cycle 1</h2><h3 id="m0">TestNG_Example_2#closeout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.PlaywrightException: Playwright connection closed
+	at com.microsoft.playwright.impl.PipeTransport.poll(PipeTransport.java:65)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:216)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:144)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:132)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:122)
+	at com.microsoft.playwright.impl.BrowserImpl.close(BrowserImpl.java:94)
+	at com.microsoft.playwright.Browser.close(Browser.java:1331)
+	at TestNG_Example_2.closeout(TestNG_Example_2.java:61)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestNG_Example_2#insta</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Login of Instagram</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3172:17)
+    at LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3383:24)
+    at LongStandingScope.race (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3376:21)
+    at C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3373:49
+    at Array.map (&lt;anonymous&gt;)
+    at LongStandingScope.raceMultiple (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3373:36)
+    at _Frame.retryWithProgressAndTimeouts (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23097:52)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23087:16)
+    at async _Frame.fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23218:27)
+    at async _FrameDispatcher.fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:53474:16)
+    at async _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:11762:27)
+    at async _FrameDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:18203:18)
+    at async DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:18408:27)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName(&quot;Mobile number, username or email&quot;))
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:146)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:132)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
+	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:273)
+	at com.microsoft.playwright.Locator.fill(Locator.java:3346)
+	at TestNG_Example_2.insta(TestNG_Example_2.java:42)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message=&apos;Target page, context or browser has been closed
+  name=&apos;TargetClosedError
+  stack=&apos;TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3172:17)
+    at LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3383:24)
+    at LongStandingScope.race (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3376:21)
+    at C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3373:49
+    at Array.map (&lt;anonymous&gt;)
+    at LongStandingScope.raceMultiple (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3373:36)
+    at _Frame.retryWithProgressAndTimeouts (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23097:52)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23087:16)
+    at async _Frame.fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23218:27)
+    at async _FrameDispatcher.fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:53474:16)
+    at async _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:11762:27)
+    at async _FrameDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:18203:18)
+    at async DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:18408:27)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName(&quot;Mobile number, username or email&quot;))
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:268)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:222)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:144)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:132)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.PageImpl.close(PageImpl.java:569)
+	at com.microsoft.playwright.Page.close(Page.java:4073)
+	at TestNG_Example_2.closeout(TestNG_Example_2.java:60)
+	... 12 more
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestNG_Example_2#facebook</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Login of Facebook</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestNG_Example_3#insta</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Login of Instagram</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
