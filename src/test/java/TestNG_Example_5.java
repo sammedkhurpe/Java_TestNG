@@ -12,16 +12,15 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.options.AriaRole;
 
-public class TestNG_Example_3 
+public class TestNG_Example_5 
 {
 	Playwright playwright;
 	Browser browser;
 	BrowserContext context;
 	Page page;
 	
-	
 	@BeforeMethod
-	public void setup()
+	public void startup()
 	{
 		playwright=Playwright.create();
 		ArrayList<String> arguments=new ArrayList<>();
@@ -31,12 +30,18 @@ public class TestNG_Example_3
 		page=context.newPage();
 	}
 	
-//	Running multiple test cases
-//	Sequence of execution order depends on the priority set
-//	default priority zero (0) and can use integer to set priority
-//	Negative >>> Zero >>> Positive
+	@AfterMethod
+	public void closout()
+	{
+		page.close();
+		browser.close();
+		playwright.close();
+	}
 	
-	@Test (priority=1)
+	
+//	Skip the test cases by using "enabled=false" by default it would be true.
+	
+	@Test (priority=1, enabled=false)
 	public void insta()
 	{
 		Reporter.log("Login of Instagram", true);
@@ -56,11 +61,4 @@ public class TestNG_Example_3
 		page.getByLabel("Log in").click();
 	}
 	
-	@AfterMethod
-	public void closeout()
-	{
-		page.close();
-		browser.close();
-		playwright.close();
-	}
 }
