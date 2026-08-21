@@ -1,113 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="2" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[This is before suite]]>
+      <![CDATA[Login of Instagram]]>
     </line>
     <line>
-      <![CDATA[This is before class]]>
+      <![CDATA[Login of Instagram]]>
     </line>
     <line>
-      <![CDATA[This is before method]]>
-    </line>
-    <line>
-      <![CDATA[Testcase: Login of Instagram]]>
-    </line>
-    <line>
-      <![CDATA[This is after method]]>
-    </line>
-    <line>
-      <![CDATA[This is before method]]>
-    </line>
-    <line>
-      <![CDATA[Testcase: Login of Facebook]]>
-    </line>
-    <line>
-      <![CDATA[This is after method]]>
-    </line>
-    <line>
-      <![CDATA[This is after class]]>
-    </line>
-    <line>
-      <![CDATA[This is after suite]]>
+      <![CDATA[Login of Facebook]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-08-19T11:25:43 IST" name="Default suite" finished-at="2026-08-19T11:25:57 IST" duration-ms="14127">
+  <suite started-at="2026-08-19T17:41:09 IST" name="Sanity Testing" finished-at="2026-08-19T17:41:25 IST" duration-ms="15619">
     <groups>
     </groups>
-    <test started-at="2026-08-19T11:25:43 IST" name="Default test" finished-at="2026-08-19T11:25:57 IST" duration-ms="14127">
-      <class name="TestNG_Example_6">
-        <test-method is-config="true" signature="beforesuite()[pri:0, instance:TestNG_Example_6@38425407]" started-at="2026-08-19T11:25:42 IST" name="beforesuite" finished-at="2026-08-19T11:25:43 IST" duration-ms="18" status="PASS">
+    <test started-at="2026-08-19T17:41:09 IST" name="Test Cycle 1" finished-at="2026-08-19T17:41:25 IST" duration-ms="15619">
+      <class name="TestNG_Example_2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestNG_Example_2@459e9125]" started-at="2026-08-19T17:41:09 IST" name="setup" finished-at="2026-08-19T17:41:17 IST" duration-ms="8450" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[This is before suite]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- beforesuite -->
-        <test-method is-config="true" signature="beforeclass()[pri:0, instance:TestNG_Example_6@38425407]" started-at="2026-08-19T11:25:43 IST" name="beforeclass" finished-at="2026-08-19T11:25:43 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestNG_Example_2@459e9125]" started-at="2026-08-19T17:41:09 IST" name="setup" finished-at="2026-08-19T17:41:17 IST" duration-ms="7680" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[This is before class]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- beforeclass -->
-        <test-method is-config="true" signature="startup()[pri:0, instance:TestNG_Example_6@38425407]" started-at="2026-08-19T11:25:43 IST" name="startup" finished-at="2026-08-19T11:25:48 IST" duration-ms="4977" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="insta()[pri:0, instance:TestNG_Example_2@459e9125]" started-at="2026-08-19T17:41:17 IST" name="insta" finished-at="2026-08-19T17:41:24 IST" duration-ms="7095" status="FAIL">
+          <exception class="com.microsoft.playwright.impl.TargetClosedError">
+            <message>
+              <![CDATA[Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3172:17)
+    at LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3383:24)
+    at LongStandingScope.race (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3376:21)
+    at C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3373:49
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3373:36)
+    at _Frame.retryWithProgressAndTimeouts (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23097:52)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23087:16)
+    at async _Frame.fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23218:27)
+    at async _FrameDispatcher.fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:53474:16)
+    at async _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:11762:27)
+    at async _FrameDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:18203:18)
+    at async DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:18408:27)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Mobile number, username or email"))
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3172:17)
+    at LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3383:24)
+    at LongStandingScope.race (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3376:21)
+    at C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3373:49
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3373:36)
+    at _Frame.retryWithProgressAndTimeouts (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23097:52)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23087:16)
+    at async _Frame.fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23218:27)
+    at async _FrameDispatcher.fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:53474:16)
+    at async _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:11762:27)
+    at async _FrameDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:18203:18)
+    at async DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:18408:27)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Mobile number, username or email"))
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:146)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:132)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:132)
+at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
+at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:273)
+at com.microsoft.playwright.Locator.fill(Locator.java:3346)
+at TestNG_Example_2.insta(TestNG_Example_2.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3172:17)
+    at LongStandingScope._race (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3383:24)
+    at LongStandingScope.race (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3376:21)
+    at C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3373:49
+    at Array.map (<anonymous>)
+    at LongStandingScope.raceMultiple (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:3373:36)
+    at _Frame.retryWithProgressAndTimeouts (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23097:52)
+    at async _Frame.retryWithProgressAndBackoff (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23087:16)
+    at async _Frame.fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:23218:27)
+    at async _FrameDispatcher.fill (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:53474:16)
+    at async _ProgressController.run (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:11762:27)
+    at async _FrameDispatcher._runCommand (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:18203:18)
+    at async DispatcherConnection.dispatch (C:\Users\Admin\AppData\Local\Temp\playwright-java-15052788668554900464\package\lib\coreBundle.js:18408:27)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Mobile number, username or email"))
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:268)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:222)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:144)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:132)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:132)
+at com.microsoft.playwright.impl.PageImpl.close(PageImpl.java:569)
+at com.microsoft.playwright.Page.close(Page.java:4073)
+at TestNG_Example_2.closeout(TestNG_Example_2.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+... 12 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.impl.TargetClosedError -->
           <reporter-output>
             <line>
-              <![CDATA[This is before method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="insta()[pri:1, instance:TestNG_Example_6@38425407]" started-at="2026-08-19T11:25:48 IST" name="insta" finished-at="2026-08-19T11:25:50 IST" duration-ms="2855" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Testcase: Login of Instagram]]>
+              <![CDATA[Login of Instagram]]>
             </line>
           </reporter-output>
         </test-method> <!-- insta -->
-        <test-method is-config="true" signature="closout()[pri:0, instance:TestNG_Example_6@38425407]" started-at="2026-08-19T11:25:50 IST" name="closout" finished-at="2026-08-19T11:25:51 IST" duration-ms="639" status="PASS">
+        <test-method signature="facebook()[pri:0, instance:TestNG_Example_2@459e9125]" started-at="2026-08-19T17:41:17 IST" name="facebook" finished-at="2026-08-19T17:41:24 IST" duration-ms="6264" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[This is after method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closout -->
-        <test-method is-config="true" signature="startup()[pri:0, instance:TestNG_Example_6@38425407]" started-at="2026-08-19T11:25:51 IST" name="startup" finished-at="2026-08-19T11:25:53 IST" duration-ms="1522" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[This is before method]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method signature="facebook()[pri:2, instance:TestNG_Example_6@38425407]" started-at="2026-08-19T11:25:53 IST" name="facebook" finished-at="2026-08-19T11:25:56 IST" duration-ms="3407" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Testcase: Login of Facebook]]>
+              <![CDATA[Login of Facebook]]>
             </line>
           </reporter-output>
         </test-method> <!-- facebook -->
-        <test-method is-config="true" signature="closout()[pri:0, instance:TestNG_Example_6@38425407]" started-at="2026-08-19T11:25:56 IST" name="closout" finished-at="2026-08-19T11:25:57 IST" duration-ms="620" status="PASS">
+        <test-method is-config="true" signature="closeout()[pri:0, instance:TestNG_Example_2@459e9125]" started-at="2026-08-19T17:41:24 IST" name="closeout" finished-at="2026-08-19T17:41:24 IST" duration-ms="161" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Playwright connection closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Playwright connection closed
+at com.microsoft.playwright.impl.PipeTransport.poll(PipeTransport.java:65)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:216)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:144)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:132)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:132)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:122)
+at com.microsoft.playwright.impl.BrowserImpl.close(BrowserImpl.java:94)
+at com.microsoft.playwright.Browser.close(Browser.java:1331)
+at TestNG_Example_2.closeout(TestNG_Example_2.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeout -->
+        <test-method is-config="true" signature="closeout()[pri:0, instance:TestNG_Example_2@459e9125]" started-at="2026-08-19T17:41:24 IST" name="closeout" finished-at="2026-08-19T17:41:24 IST" duration-ms="540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeout -->
+      </class> <!-- TestNG_Example_2 -->
+      <class name="TestNG_Example_3">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestNG_Example_3@3c41ed1d]" started-at="2026-08-19T17:41:09 IST" name="setup" finished-at="2026-08-19T17:41:17 IST" duration-ms="7802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="insta()[pri:1, instance:TestNG_Example_3@3c41ed1d]" started-at="2026-08-19T17:41:17 IST" name="insta" finished-at="2026-08-19T17:41:23 IST" duration-ms="6016" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[This is after method]]>
+              <![CDATA[Login of Instagram]]>
             </line>
           </reporter-output>
-        </test-method> <!-- closout -->
-        <test-method is-config="true" signature="afterclass()[pri:0, instance:TestNG_Example_6@38425407]" started-at="2026-08-19T11:25:57 IST" name="afterclass" finished-at="2026-08-19T11:25:57 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- insta -->
+        <test-method is-config="true" signature="closeout()[pri:0, instance:TestNG_Example_3@3c41ed1d]" started-at="2026-08-19T17:41:23 IST" name="closeout" finished-at="2026-08-19T17:41:25 IST" duration-ms="1682" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[This is after class]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- afterclass -->
-        <test-method is-config="true" signature="aftersuite()[pri:0, instance:TestNG_Example_6@38425407]" started-at="2026-08-19T11:25:57 IST" name="aftersuite" finished-at="2026-08-19T11:25:57 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[This is after suite]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- aftersuite -->
-      </class> <!-- TestNG_Example_6 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- closeout -->
+      </class> <!-- TestNG_Example_3 -->
+    </test> <!-- Test Cycle 1 -->
+  </suite> <!-- Sanity Testing -->
 </testng-results>
